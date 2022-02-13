@@ -1,6 +1,7 @@
 import { Endpoint } from '../types'
 
 import { BASE } from '../constants/endpoints'
+
 import STRINGS from '../constants/strings'
 
 export const getEndpointUri = (endpoint: Endpoint, version: number = 1, id?: number): string => {
@@ -10,5 +11,5 @@ export const getEndpointUri = (endpoint: Endpoint, version: number = 1, id?: num
         }
     }
 
-    return [BASE, version, endpoint].join('/')
+    return [BASE, `v${version}`, endpoint].join('/')
 }

@@ -6,7 +6,7 @@ describe('getEndpointUri', () => {
     test('appends the version and endpoint', () => {
         const ENDPOINT = 'objects'
         const VERSION = 3
-        const URI = `${BASE}/${VERSION}/${ENDPOINT}`
+        const URI = `${BASE}/v${VERSION}/${ENDPOINT}`
 
         expect(getEndpointUri(ENDPOINT, VERSION)).toEqual(URI)
     })

@@ -1,3 +1,4 @@
-import { getObjectIDs } from './object'
+import { getObjectIDs } from './objects/objects'
+import { getObject } from './object/object'
 
-export { getObjectIDs }
+export { getObject, getObjectIDs }

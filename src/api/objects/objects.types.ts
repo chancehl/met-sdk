@@ -1,5 +1,3 @@
-import { CollectionObject } from '../types'
-
 export type GetObjectIDsOptions = {
     max: number
     departmentIds: number[]
@@ -10,5 +8,3 @@ export type GetObjectIDsReturnType = {
     total: number
     objectIDs: number[]
 }
-
-export type GetObjectReturnType = CollectionObject
